@@ -1,0 +1,74 @@
+.mainContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid rgba(204, 204, 204, 0.568);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pokeListContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .imgCardContainer {
+    border: 1px solid rgba(204, 204, 204, 0.582);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+.pokemonPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(204, 204, 204, 0.582);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .buttonContainer {
+    display: flex;
+    text-align: center;
+  }
+  .imgPageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .pageDataContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.abilityContainer {
+  max-width: 1000px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(204, 204, 204, 0.582);
+  border-radius: 10px;
+}
+.ant-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
