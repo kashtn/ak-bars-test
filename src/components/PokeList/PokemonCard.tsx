@@ -11,7 +11,7 @@ export const PokemonCard: FC<PropsType> = (props): ReactElement => {
   useEffect(() => {
     let mounted = true;
     async function getCurrentImage() {
-      const response = await fetch(`${env.API_URL}/pokemon/${props.pokeName}`);
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.pokeName}`);
       const result = await response.json();
       setPokeId(result.id);
     }

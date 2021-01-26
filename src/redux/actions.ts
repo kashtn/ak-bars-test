@@ -15,7 +15,7 @@ import env from "react-dotenv";
 export function getPokes() {
   return async function (dispatch: AppDispatch) {
     dispatch(startFetching());
-    const response = await fetch(`${env.API_URL}/pokemon/`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/`);
     const result = await response.json();
     dispatch(stopFetching());
     dispatch(setPokes(result.results));
@@ -25,7 +25,7 @@ export function getPokes() {
 export function getPokemon(name: string) {
   return async function (dispatch: AppDispatch) {
     dispatch(startFetching());
-    const response = await fetch(`${env.API_URL}/pokemon/${name}`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
     const result = await response.json();
     dispatch(stopFetching());
     dispatch(setCurrentPokemon(result));
